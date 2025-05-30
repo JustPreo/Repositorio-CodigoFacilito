@@ -1,0 +1,15 @@
+name: "Hola Mundo"
+
+on: [push]
+  push:
+    branches: ["main"] //Cuando se haga un push a la rama main, se ejecuta este workflow
+jobs:
+  deploy-job:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Hacemos pull del codigo"
+      - run: echo "Correr migraciones"
+      - run: echo "Generar binario"
+      - run: echo "Publicar version"
+      //Echo es como un print
