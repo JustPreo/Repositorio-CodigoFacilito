@@ -1,6 +1,6 @@
 name: "Hola Mundo"
 
-on:[push]
+on:
   push:
     branches: ["main"] //Cuando se haga un push a la rama main, se ejecuta este workflow
 jobs:
